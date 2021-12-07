@@ -1,0 +1,45 @@
+site_name: Self Hosting 101
+site_url: https://selfhosting101.wiki
+theme:
+  name: material
+  language: en
+  font:
+    text: Sauce Code pro
+    code: Sauce Code pro
+  icon:
+    logo: fontawesome/solid/cubes
+  favicon: /assets/favicon.ico
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.tracking
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+repo_url: https://github.com/lambdhack/selfhosting101.wiki
+repo_name: lambdhack/selfhosting101.wiki
+
+nav:
+  - index.md
+  - logical_infrastructure.md
+  - physical_infrastructure.md
+  - services.md
+  - license.md
